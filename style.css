@@ -1,4 +1,157 @@
 :root {
-    --color-bg: #FDFAF5 --color-text: #2C2C2C --color-accent: #8B6F47 --color-muted: #A09080 --font-heading: 'Cormorant Garamond'
-        --font-body: 'DM Sans'
+    --color-bg: #FDFAF5;
+    --color-bg-alt: #F5F0E8;
+    --color-text: #2C2C2C;
+    --color-muted: #7A6E62;
+    --color-accent: #8B6F47;
+    --color-accent-light: #C4A882;
+    --color-border: #E4DDD3;
+    --color-muted: #A09080;
+    --font-heading: 'Cormorant Garamond';
+    --font-body: 'DM Sans'
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 64px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin: 0;
+    background-color: #FDFAF5
+}
+
+nav .logo {
+    font-size: 1.7rem;
+    font-weight: 1;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.064em;
+    margin-right: -2px
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: inherit;
+    letter-spacing: 0.03em;
+    transition: opacity 0.2s ease;
+}
+
+nav ul a:hover {
+    opacity: 0.5;
+}
+
+#hero {
+    background: url('images/resturant-bg - Edited.jpg') center center / cover no-repeat;
+    height: 90vh;
+    max-width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero h1 {
+    font-family: 'Cormorant Garamond', 'DM Sans';
+    text-align: center;
+    color: var(--color-bg);
+    font-weight: 100;
+    font-size: 3.1rem;
+    margin-top: 0;
+}
+
+i {
+    color: var(--color-accent-light)
+}
+
+#hero p {
+    font-family: var(--font-body);
+    color: var(--color-accent);
+    font-size: 0.98rem;
+}
+
+#hero .est {
+    margin-top: -2rem;
+    color: #C4A882;
+    letter-spacing: 0.15rem;
+    font-size: 0.86rem
+}
+
+#hero .desc {
+    color: var(--color-bg-alt);
+    margin-top: -8px;
+    font-weight: 100;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+.btn-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+}
+
+#hero button {
+    padding: 15px 28px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1px;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 3px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.25s ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn1 {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+#hero .btn2 {
+    border: 1px solid white;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+}
+
+#hero button:hover {
+    transform: translateY(-4px);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+}
+
+#hero button:active {
+    transform: translateY(-1px) scale(0.98);
+    transition: transform 0.1s ease;
 }
