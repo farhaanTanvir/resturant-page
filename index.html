@@ -13,11 +13,11 @@
 </head>
 <body>
 <nav>
-  <a href="/" class="logo">Marea</a>
+  <p class="logo">Marea</p>
   <ul>
-    <li><a href="#">Menu</a></li>
-    <li><a href="#">Reserve</a></li>
-    <li><a href="#">Visit</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#reserve">Reserve</a></li>
+    <li><a href="#location">Visit</a></li>
   </ul>
 </nav>
    <section id="hero">
@@ -157,10 +157,117 @@
     </div>
    </section>
 
-   <section id="reserve"></section>
 
-   <section id="location"></section>
-   <footer></footer>
+
+   <section id="reserve">
+      <div class="griddy"><p class="bye">Book Your Evening</p>
+      <h1>Reserve a Table</h1>
+      <p class="bye-2">We recommend booking at least 48 hours in advance. For parties of 8 or more, please contact us directly.</p>
+      <p class="contact">+34 12 1234567<br>hello@mareabcn.com</p>
+      </div>
+      <div class="griddy">
+        <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="fb162c40-41ec-466d-bee6-a56a2499e652">
+      <input type="hidden" name="apikey" value="fb162c40-41ec-466d-bee6-a56a2499e652">
+
+      <div class="form-group">
+        <label for="name">FULL NAME</label>
+        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="Email" placeholder="you@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="date">DATE</label>
+        <input type="date" id="date" name="Date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="time">TIME</label>
+        <input type="time" id="time" name="Time" placeholder="Select a time" required>
+      </div>
+
+      <div class="form-group">
+        <label for="guest-num">NUMBER OF GUESTS</label>
+        <select id="guest-num" name="Guest Number" required>
+           <option value="" disabled selected>Select guests</option>
+           <option value="1">1 Guest</option>
+           <option value="2">2 Guests</option>
+           <option value="2">3 Guests</option>
+           <option value="2">4 Guests</option>
+           <option value="2">5 Guests</option>
+           <option value="2">6 Guests</option>
+           <option value="2">7 Guests</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="requests">SPECIAL REQUESTS (optional)</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Allergies, celebrations, seating preferrences..."></textarea>
+      </div>
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    <button type="submit" id="submit-btn">REQUEST RESERVATION</button>
+</form>
+<p class="will-notify">We'll confirm your booking within 24 hours.</p>
+      </div>
+   </section>
+
+   <section id="location">
+    <div class="griddy">
+    <p class="bye">Find Us</p>
+    <h1>Location & Hours</h1>
+    <div class="address-grid">
+      <div class="address-grid1">
+        <div class="address-item">
+          <p class="address-header">Address</p>
+          <p class="address-text">Carrer de la Marina, 12<br>Barceloneta, Barcelona 08003<br>Spain</p>
+        </div>
+        <div class="address-item">
+          <p class="address-header">Hours</p>
+          <p class="address-text">Monday - Tuesday <span class="red">Closed</span> <br>Wednesday - Friday <span class="time">18:00 - 23:00</span><br>Saturday <span class="time">13:00 - 23:30</span><br>Sunday <span class="time">13:00 - 21:00</span></p>
+        </div>
+      </div>
+      <div class="address-grid2">
+        <div class="address-item">
+          <p class="address-header">Contact</p>
+          <p class="address-text">+34 12 1234567<br>hello@mareabcn.com</p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="griddy map-placeholder">
+       <div class="map-inner">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        <p>Carrer de la Marina, 12<br>Barceloneta, Barcelona</p>
+       </div>
+    </div>
+   </section>
+   <footer>
+    <div class="footer-grid">
+      <div class="griddy1"><p>Coastal Mediterranean fine dining.<br>Barcelona, Spain.</p></div>
+      <div class="griddy">
+        <p class="nav-heading">Navigate</p>
+        <p class="nav-item"><a href="#menu">Menu</a></p>
+        <p class="nav-item"><a href="#reserve">Reservations</a></p>
+        <p class="nav-item"><a href="#location">Visit</a></p>
+      </div>
+
+      <div class="griddy">
+        <p class="nav-heading">Connect</p>
+        <p class="nav-item"><a href="">Instagram</a></p>
+        <p class="nav-item"><a href="">Facebook</a></p>
+        <p class="nav-item"><a href="">TripAdvisor</a></p>
+
+      </div>
+    </div>
+   </footer>
+   <div class="rights-container"><p>© 2025 Marea. All rights reserved</p></div>
     <script src="script.js"></script>
 </body>
 </html>
