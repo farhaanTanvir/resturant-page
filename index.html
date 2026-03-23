@@ -45,7 +45,7 @@
       <div id="desserts" class="">DESSERTS</div>
       <div id="drinks" class="">DRINKS</div>
     </div>
-    <div id="items">
+    <div class="items">
       <div class="item-card starters tab-panel active">
   <img src="images/Gemini_Generated_Image_coghv3coghv3cogh.png" />
   <p class="name">Burrata & Heirloom Tomato</p>
@@ -160,26 +160,30 @@
 
 
    <section id="reserve">
-      <div class="griddy"><p class="bye">Book Your Evening</p>
+      <div class="griddyone"><p class="bye">Book Your Evening</p>
       <h1>Reserve a Table</h1>
-      <p class="bye-2">We recommend booking at least 48 hours in advance. For parties of 8 or more, please contact us directly.</p>
+      <p class="bye-2">We recommend booking at least 48 hours in advance.<br>For parties of 8 or more, please contact us directly.</p>
       <p class="contact">+34 12 1234567<br>hello@mareabcn.com</p>
       </div>
       <div class="griddy">
         <form action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="fb162c40-41ec-466d-bee6-a56a2499e652">
       <input type="hidden" name="apikey" value="fb162c40-41ec-466d-bee6-a56a2499e652">
-
+<div class="minigrid">
       <div class="form-group">
-        <label for="name">FULL NAME</label>
-        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+        <label for="name">FIRST NAME</label>
+        <input type="text" id="name" name="First Name" placeholder="Your First Name" required>
       </div>
-
+      <div class="form-group">
+        <label for="namelast">LAST NAME</label>
+        <input type="text" id="namelst" name="Last Name" placeholder="Your Last Name" required>
+      </div>
+</div>
       <div class="form-group">
         <label for="email">EMAIL</label>
         <input type="email" id="email" name="Email" placeholder="you@email.com" required>
       </div>
-
+<div class="minigrid">
       <div class="form-group">
         <label for="date">DATE</label>
         <input type="date" id="date" name="Date" required>
@@ -189,7 +193,7 @@
         <label for="time">TIME</label>
         <input type="time" id="time" name="Time" placeholder="Select a time" required>
       </div>
-
+</div>
       <div class="form-group">
         <label for="guest-num">NUMBER OF GUESTS</label>
         <select id="guest-num" name="Guest Number" required>
@@ -216,7 +220,7 @@
    </section>
 
    <section id="location">
-    <div class="griddy">
+    <div class="griddyfirst">
     <p class="bye">Find Us</p>
     <h1>Location & Hours</h1>
     <div class="address-grid">
@@ -235,6 +239,10 @@
           <p class="address-header">Contact</p>
           <p class="address-text">+34 12 1234567<br>hello@mareabcn.com</p>
         </div>
+        <div class="address-item">
+          <p class="address-header">Parking</p>
+          <p class="address-text">Complimentary Valet from 5:00PM<br>Street parking available</p>
+        </div>
       </div>
 
     </div>
@@ -250,7 +258,7 @@
    </section>
    <footer>
     <div class="footer-grid">
-      <div class="griddy1"><p>Coastal Mediterranean fine dining.<br>Barcelona, Spain.</p></div>
+      <div class="griddy1"><p class="firstone">Coastal Mediterranean fine dining.<br>Barcelona, Spain.</p></div>
       <div class="griddy">
         <p class="nav-heading">Navigate</p>
         <p class="nav-item"><a href="#menu">Menu</a></p>

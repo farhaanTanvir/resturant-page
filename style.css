@@ -40,12 +40,13 @@ nav {
 }
 
 nav .logo {
-    font-size: 1.7rem;
+    font-size: 1.75rem;
     font-weight: 1;
     text-decoration: none;
     color: black;
     letter-spacing: 0.064em;
-    margin-right: -2px
+    margin-right: -2px;
+
 }
 
 nav ul {
@@ -63,6 +64,7 @@ nav ul a {
     color: inherit;
     letter-spacing: 0.03em;
     transition: opacity 0.2s ease;
+    font-family: 'DM Sans', sans-serif;
 }
 
 nav ul a:hover {
@@ -197,6 +199,12 @@ i {
     font-weight: 500
 }
 
+.items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
 .item-card {
     border: 1px solid var(--color-border);
     background-color: var(--color-bg-alt);
@@ -279,6 +287,10 @@ i {
 
 .selector-cont div.underline::after {
     width: 100%;
+}
+
+.tab-panel.active .items {
+    gap: 0;
 }
 
 /* JAVSCRIPT-DEDICATED CSS */
@@ -510,4 +522,202 @@ footer p a {
     background-color: rgb(24, 24, 24);
     color: rgb(168, 168, 168);
     border-top: 1px solid grey;
+}
+
+.minigrid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+@media (min-width: 768px) {
+    nav {
+        padding: 0.25rem 3rem;
+    }
+
+    nav ul a {
+        font-size: 1.1rem;
+        margin-left: 10px;
+    }
+
+    .logo {
+        font-size: 2rem !important;
+
+    }
+
+    #hero h1 {
+        font-size: 3.6rem;
+    }
+
+    #hero p {
+        font-size: 1.15rem;
+    }
+
+    #hero .est {
+        margin-top: 1rem;
+    }
+
+    .btn-grid {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #hero button {
+        padding: 16px 30px;
+        font-size: 1rem;
+
+    }
+
+    #menu h1 {
+        font-size: 2.6rem;
+        margin-bottom: 50px;
+    }
+
+    .offerings,
+    #menu .desc {
+        font-size: 1.1rem;
+    }
+
+    .selector-cont {
+        font-size: 1rem;
+        gap: 20px;
+    }
+
+    .items {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    #reserve h1,
+    #location h1 {
+        font-size: 2.5rem;
+    }
+
+    .bye,
+    .bye2 {
+        font-family: 1.3rem;
+    }
+
+    .contact {
+        font-size: 1.15rem;
+    }
+
+    .minigrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .address-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .address-item {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .map-placeholder {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px
+    }
+
+    footer {
+        font-size: 1.1rem
+    }
+
+    .rights-container {
+        height: 8vh;
+        font-size: 1.1rem;
+    }
+
+    .items {
+        column-gap: 10px;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    nav ul a {
+        margin-left: 20px
+    }
+
+    #hero h1 {
+        font-size: 4.2rem;
+    }
+
+    #menu {
+        margin: 70px 15rem;
+    }
+
+    .item-card img {
+        height: 350px;
+    }
+
+    .items {
+        column-gap: 25px;
+    }
+
+    #reserve {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+
+    .griddyone {
+        place-self: center;
+    }
+
+    #reserve h1 {
+        font-size: 3.5rem;
+    }
+
+    #reserve p {
+        font-size: 1.15rem;
+    }
+
+    .map-placeholder {
+        width: 80%;
+        height: 500px;
+        align-self: center;
+        margin-top: 50px
+    }
+
+    #location {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .griddyfirst {
+        place-self: center;
+        margin-bottom: 40px;
+    }
+
+    .griddyone h1,
+    .griddyone p {
+        padding: 20px 0;
+    }
+
+    .griddy1 .firstone {
+        margin-left: 60px
+    }
+
+    .griddyone {
+        padding-bottom: 100px;
+    }
+}
+
+@media (min-width: 1601px) {
+    #menu {
+        margin: 70px 24rem;
+    }
 }
