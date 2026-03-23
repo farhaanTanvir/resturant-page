@@ -1,3 +1,4 @@
+/* THIS IS THE RESTURANT PAGE */
 :root {
     --color-bg: #FDFAF5;
     --color-bg-alt: #F5F0E8;
@@ -8,7 +9,8 @@
     --color-border: #E4DDD3;
     --color-muted: #A09080;
     --font-heading: 'Cormorant Garamond';
-    --font-body: 'DM Sans'
+    --font-body: 'DM Sans';
+    --right:
 }
 
 body,
@@ -24,10 +26,17 @@ body {
     background-color: var(--color-bg)
 }
 
-nav {
+header {
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+
+
+
+nav {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -531,6 +540,7 @@ footer p a {
 
 
 @media (min-width: 768px) {
+
     nav {
         padding: 0.25rem 3rem;
     }
