@@ -15,6 +15,14 @@
   <div class="dark-filter"></div>
   <header>
     <div class="offscreen-menu">
+
+      <div class="crossbtn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></div>
+
+      <ul>
+        <li class="ham-menu"><a class="ham-item" href="#menu">Menu</a></li>
+        <li class="ham-reserve"><a class="ham-item" href="#reserve">Reserve</a></li>
+        <li class="ham-location"><a class="ham-item" href="#location">Visit</a></li>
+      </ul>
     </div>
 <nav>
   <p class="logo">Marea</p>
@@ -35,8 +43,8 @@
     <p class="desc">Coastal mediterranean cuisine, rooted in tradition, <br>
     shaped by the tide.</p>
     <div class="btn-grid">
-    <button class="btn1">RESERVE A TABLE</button>
-    <button class="btn2">EXPLORE MENU</button>
+      <a href="#reserve"><button class="btn1">RESERVE A TABLE</button></a>
+      <a href="#menu"><button class="btn2">EXPLORE MENU</button></a>
     </div>
     
    </section>
@@ -46,10 +54,10 @@
     <h1>The Menu</h1>
     <p class="desc">Each dish is composed around what arrives fresh each morning - from the coast, the grove, and the garden.</p>
     <div class="selector-cont">
-      <div id="starters" class=" underline">STARTERS</div>
-      <div id="mains" class="">MAINS</div>
-      <div id="desserts" class="">DESSERTS</div>
-      <div id="drinks" class="">DRINKS</div>
+      <div id="starters" class="underline tab-selector">STARTERS</div>
+      <div id="mains" class="tab-selector">MAINS</div>
+      <div id="desserts" class="tab-selector">DESSERTS</div>
+      <div id="drinks" class="tab-selector">DRINKS</div>
     </div>
     <div class="items">
       <div class="item-card starters tab-panel active">
